@@ -13,6 +13,8 @@
 		5786CF3B19FD682F002D0B91 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5786CF3A19FD682F002D0B91 /* Images.xcassets */; };
 		5786CF3E19FD682F002D0B91 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5786CF3C19FD682F002D0B91 /* LaunchScreen.xib */; };
 		5786CF4A19FD6830002D0B91 /* MyKeyboard1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5786CF4919FD6830002D0B91 /* MyKeyboard1Tests.swift */; };
+		5786CF5C19FD68DF002D0B91 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5786CF5B19FD68DF002D0B91 /* KeyboardViewController.swift */; };
+		5786CF5F19FD68DF002D0B91 /* ChenKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 5786CF5719FD68DF002D0B91 /* ChenKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +25,28 @@
 			remoteGlobalIDString = 5786CF2D19FD682F002D0B91;
 			remoteInfo = MyKeyboard1;
 		};
+		5786CF5D19FD68DF002D0B91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5786CF2619FD682F002D0B91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5786CF5619FD68DF002D0B91;
+			remoteInfo = ChenKeyboard;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5786CF6319FD68DF002D0B91 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				5786CF5F19FD68DF002D0B91 /* ChenKeyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		5786CF2E19FD682F002D0B91 /* MyKeyboard1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyKeyboard1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +59,9 @@
 		5786CF4319FD6830002D0B91 /* MyKeyboard1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyKeyboard1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5786CF4819FD6830002D0B91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5786CF4919FD6830002D0B91 /* MyKeyboard1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyKeyboard1Tests.swift; sourceTree = "<group>"; };
+		5786CF5719FD68DF002D0B91 /* ChenKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ChenKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		5786CF5A19FD68DF002D0B91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5786CF5B19FD68DF002D0B91 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +79,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5786CF5419FD68DF002D0B91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +94,7 @@
 			children = (
 				5786CF3019FD682F002D0B91 /* MyKeyboard1 */,
 				5786CF4619FD6830002D0B91 /* MyKeyboard1Tests */,
+				5786CF5819FD68DF002D0B91 /* ChenKeyboard */,
 				5786CF2F19FD682F002D0B91 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,6 +104,7 @@
 			children = (
 				5786CF2E19FD682F002D0B91 /* MyKeyboard1.app */,
 				5786CF4319FD6830002D0B91 /* MyKeyboard1Tests.xctest */,
+				5786CF5719FD68DF002D0B91 /* ChenKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -112,6 +147,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		5786CF5819FD68DF002D0B91 /* ChenKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5786CF5B19FD68DF002D0B91 /* KeyboardViewController.swift */,
+				5786CF5919FD68DF002D0B91 /* Supporting Files */,
+			);
+			path = ChenKeyboard;
+			sourceTree = "<group>";
+		};
+		5786CF5919FD68DF002D0B91 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5786CF5A19FD68DF002D0B91 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +174,12 @@
 				5786CF2A19FD682F002D0B91 /* Sources */,
 				5786CF2B19FD682F002D0B91 /* Frameworks */,
 				5786CF2C19FD682F002D0B91 /* Resources */,
+				5786CF6319FD68DF002D0B91 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				5786CF5E19FD68DF002D0B91 /* PBXTargetDependency */,
 			);
 			name = MyKeyboard1;
 			productName = MyKeyboard1;
@@ -150,6 +204,23 @@
 			productReference = 5786CF4319FD6830002D0B91 /* MyKeyboard1Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		5786CF5619FD68DF002D0B91 /* ChenKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5786CF6019FD68DF002D0B91 /* Build configuration list for PBXNativeTarget "ChenKeyboard" */;
+			buildPhases = (
+				5786CF5319FD68DF002D0B91 /* Sources */,
+				5786CF5419FD68DF002D0B91 /* Frameworks */,
+				5786CF5519FD68DF002D0B91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChenKeyboard;
+			productName = ChenKeyboard;
+			productReference = 5786CF5719FD68DF002D0B91 /* ChenKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +236,9 @@
 					5786CF4219FD6830002D0B91 = {
 						CreatedOnToolsVersion = 6.1;
 						TestTargetID = 5786CF2D19FD682F002D0B91;
+					};
+					5786CF5619FD68DF002D0B91 = {
+						CreatedOnToolsVersion = 6.1;
 					};
 				};
 			};
@@ -183,6 +257,7 @@
 			targets = (
 				5786CF2D19FD682F002D0B91 /* MyKeyboard1 */,
 				5786CF4219FD6830002D0B91 /* MyKeyboard1Tests */,
+				5786CF5619FD68DF002D0B91 /* ChenKeyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -199,6 +274,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5786CF4119FD6830002D0B91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5786CF5519FD68DF002D0B91 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -225,6 +307,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5786CF5319FD68DF002D0B91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5786CF5C19FD68DF002D0B91 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +322,11 @@
 			isa = PBXTargetDependency;
 			target = 5786CF2D19FD682F002D0B91 /* MyKeyboard1 */;
 			targetProxy = 5786CF4419FD6830002D0B91 /* PBXContainerItemProxy */;
+		};
+		5786CF5E19FD68DF002D0B91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5786CF5619FD68DF002D0B91 /* ChenKeyboard */;
+			targetProxy = 5786CF5D19FD68DF002D0B91 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -336,6 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = MyKeyboard1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +442,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = MyKeyboard1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -386,6 +483,30 @@
 			};
 			name = Release;
 		};
+		5786CF6119FD68DF002D0B91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ChenKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		5786CF6219FD68DF002D0B91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ChenKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -411,6 +532,14 @@
 			buildConfigurations = (
 				5786CF5119FD6830002D0B91 /* Debug */,
 				5786CF5219FD6830002D0B91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		5786CF6019FD68DF002D0B91 /* Build configuration list for PBXNativeTarget "ChenKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5786CF6119FD68DF002D0B91 /* Debug */,
+				5786CF6219FD68DF002D0B91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
